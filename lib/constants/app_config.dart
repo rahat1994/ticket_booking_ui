@@ -8,6 +8,10 @@ class App{
 	double _widthPadding;
 	String _url = '';
 
+	// Dimension of the design canvas (e.g XD, PSD, Figma)
+	double _artBoardHeight = 896.0;
+	double _artBoardWidth = 414.0;
+
 	App(_context) {
 		this._context = _context;
 		MediaQueryData _queryData = MediaQuery.of(this._context);
@@ -32,7 +36,14 @@ class App{
 	double appHorizontalPadding(double v) {
 		return _widthPadding * v;
 	}
-	
+
+	double relativeWidth(double v){
+		return appWidth((v / _artBoardWidth) * 100) ;
+	}
+
+	double relativeHeight(double v){
+		return appHeight((v / _artBoardHeight) * 100) ;
+	}
 	String url(){
 		return _url;
 	}

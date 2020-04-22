@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ticketbooking/src/widgets/itinerary_widget.dart';
+import 'package:ticketbooking/src/widgets/transport_booking_widget.dart';
 import '../../constants/app_config.dart' as config;
+
 
 class TransportInformation extends StatelessWidget {
   @override
@@ -11,15 +14,14 @@ class TransportInformation extends StatelessWidget {
 				Positioned(
 					top: 0,
 					child: Container(
-						width: config.App(context).appWidth(100),
-						height: config.App(context).appHeight(32),
+						width:config.App(context).relativeWidth(414),
+						height: config.App(context).relativeHeight(289),
 						decoration: BoxDecoration(color: Theme.of(context).accentColor),
 					),
 				),
 				Positioned(
-						top: config.App(context).appHeight(13),
+						top: config.App(context).relativeHeight(119),
 					  	child: Container(
-							height: config.App(context).appHeight(37),
 							width: config.App(context).appWidth(85),
 							child: Text(
 								'Good Morning Mr. james',
@@ -28,16 +30,17 @@ class TransportInformation extends StatelessWidget {
 					  	)
 				),
 				Positioned(
-					  top: config.App(context).appHeight(16),
+					  top: config.App(context).relativeHeight(153),
 					  child: Container(
-						  height: config.App(context).appHeight(37),
 						  width: config.App(context).appWidth(85),
 						  child: Text(
 								'Book a bus Ticket',
 								style: Theme.of(context).textTheme.headline
 						  ),
 					  )
-				)
+				),
+				...nonStopItinerary(context),
+				TransportBooking()
 			],
 		)
 	);
