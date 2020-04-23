@@ -49,8 +49,8 @@ class SingleItinerary extends StatelessWidget {
 							mainAxisAlignment: MainAxisAlignment.center,
 							crossAxisAlignment: CrossAxisAlignment.start,
 							children: <Widget>[
-								Text('From', style: Theme.of(context).textTheme.subhead),
-								Text('Los Angeles', style: Theme.of(context).textTheme.title),
+								Text('From', style: Theme.of(context).textTheme.caption),
+								Text('Los Angeles', style: Theme.of(context).textTheme.body1),
 							],
 						)
 					],

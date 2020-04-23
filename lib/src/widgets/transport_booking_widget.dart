@@ -55,8 +55,8 @@ class _TransportBookingState extends State<TransportBooking> {
 									mainAxisAlignment: MainAxisAlignment.center,
 									crossAxisAlignment: CrossAxisAlignment.start,
 									children: <Widget>[
-										Text('From', style: Theme.of(context).textTheme.subhead),
-										Text('Los Angeles', style: Theme.of(context).textTheme.title),
+										Text('From', style: Theme.of(context).textTheme.caption),
+										Text('Los Angeles', style: Theme.of(context).textTheme.body1),
 									],
 								),
 								SizedBox(
@@ -66,8 +66,8 @@ class _TransportBookingState extends State<TransportBooking> {
 									mainAxisAlignment: MainAxisAlignment.center,
 									crossAxisAlignment: CrossAxisAlignment.center,
 									children: <Widget>[
-										Text('Type', style: Theme.of(context).textTheme.subhead),
-										Text('AC', style: Theme.of(context).textTheme.title),
+										Text('Type', style: Theme.of(context).textTheme.caption),
+										Text('AC', style: Theme.of(context).textTheme.body1),
 									],
 								),
 							],
@@ -99,8 +99,8 @@ class _TransportBookingState extends State<TransportBooking> {
 										mainAxisAlignment: MainAxisAlignment.center,
 										crossAxisAlignment: CrossAxisAlignment.start,
 										children: <Widget>[
-											Text('Departure', style: Theme.of(context).textTheme.subhead),
-											Text('Tue 6th May 2020', style: Theme.of(context).textTheme.title),
+											Text('Departure', style: Theme.of(context).textTheme.caption),
+											Text('Tue 6th May 2020', style: Theme.of(context).textTheme.body1),
 										],
 									),
 								],
