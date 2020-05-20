@@ -21,8 +21,7 @@ class SingleItinerary extends StatelessWidget {
 		),
 		child: Padding(
 			padding:EdgeInsets.symmetric(
-				horizontal: config.App(context).relativeWidth(19),
-				vertical:  config.App(context).relativeHeight(16),
+				horizontal: config.App(context).relativeWidth(20),
 			),
 			child: Container(
 				child: Row(

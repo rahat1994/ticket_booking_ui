@@ -55,7 +55,7 @@ class Colors{
 	Color _secondColor = Color(0xFF000000);
 	Color _accentColor = Color(0xFFFFE434);
 	Color _hintColor = Color(0xFF8A959E);
-
+	Color _appWhite = Color(0xFFFFFFFF);
 	Color mainColor(double opacity) {
 		return this._mainColor.withOpacity(opacity);
 	}
@@ -70,5 +70,9 @@ class Colors{
 
 	Color hintColor(double opacity) {
 		return this._hintColor.withOpacity(opacity);
+	}
+
+	Color appWhite(double opacity) {
+		return this._appWhite.withOpacity(opacity);
 	}
 }
